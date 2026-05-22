@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erwin Daza | Senior Full Stack Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Tech Background -->
+    <div class="tech-bg">
+        <canvas id="tech-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">ED</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#ai-projects" class="nav-link">AI Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Erwin L. Daza</h1>
+            <h2 class="hero-title">Senior Full Stack Engineer</h2>
+            <p class="hero-subtitle">Node.js &bull; .NET &bull; React &bull; Cloud &bull; AI</p>
+            <p class="hero-description">10+ years building scalable fintech, government, and enterprise systems. Based in the Philippines, open to remote work with US time overlap.</p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-bg-shape"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Senior Full Stack Engineer with <strong>10+ years of experience</strong> building scalable fintech, government, and enterprise systems. I have a proven track record of delivering production-grade platforms from the ground up, including a <strong>digital bank with 1M+ users</strong>.</p>
+                    <p>I specialize in cloud-native architectures (Azure/AWS), high-performance APIs, and modern web applications using Node.js, .NET, and React. I'm experienced in working with US-based teams in Agile environments.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">10+</span>
+                            <span class="highlight-label">Years Experience</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">1M+</span>
+                            <span class="highlight-label">Users Served</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">7+</span>
+                            <span class="highlight-label">Companies</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-details">
+                    <h3>Education</h3>
+                    <p>Bachelor of Science in Information Technology<br><em>Camarines Sur Polytechnic Colleges</em></p>
+                    <h3>Certifications</h3>
+                    <ul class="cert-list">
+                        <li>SAFe 6.0 Practitioner</li>
+                        <li>Microsoft Azure AI-900</li>
+                        <li>Microsoft Azure AZ-900</li>
+                        <li>Civil Service Professional - Philippines</li>
+                    </ul>
+                    <h3>Awards</h3>
+                    <ul class="cert-list">
+                        <li>Backend Team MVP - KOMO Digital Bank (2021)</li>
+                        <li>Rookie of the Year - Cr8v Web Solutions (2015)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title">Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">&#60;/&#62;</div>
+                    <h3>Languages & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">.NET (C#)</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">&#9729;</div>
+                    <h3>Cloud & Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Azure Functions</span>
+                        <span class="tag">Service Bus</span>
+                        <span class="tag">App Services</span>
+                        <span class="tag">API Management</span>
+                        <span class="tag">Document AI</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">&#9881;</div>
+                    <h3>Architecture</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Microservices</span>
+                        <span class="tag">Event-Driven Systems</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">GraphQL</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">&#128451;</div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">CosmosDB</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">&#128736;</div>
+                    <h3>Tools & Practices</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Agile/Scrum</span>
+                        <span class="tag">Unit Testing</span>
+                        <span class="tag">Dapper</span>
+                        <span class="tag">Entity Framework</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">&#129302;</div>
+                    <h3>AI & Automation</h3>
+                    <div class="skill-tags">
+                        <span class="tag">OpenAI API</span>
+                        <span class="tag">Claude API</span>
+                        <span class="tag">Azure Document AI</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">GitHub Copilot</span>
+                        <span class="tag">Prompt Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle">A decade of building production systems across fintech, government & enterprise</p>
+
+            <div class="exp-grid">
+                <div class="exp-card exp-current">
+                    <div class="exp-card-accent"></div>
+                    <div class="exp-card-body">
+                        <div class="exp-meta">
+                            <span class="exp-status">Current</span>
+                            <span class="exp-period">Apr 2024 - Present</span>
+                        </div>
+                        <h3 class="exp-company">3Cloud</h3>
+                        <p class="exp-role">Senior Software Engineer (Consultant)</p>
+                        <p class="exp-location">Remote (US Client)</p>
+                        <ul class="exp-list">
+                            <li>Developed enterprise tax filing platform for US accounting firms, handling large-scale document processing and validation</li>
+                            <li>Built scalable APIs using Node.js and .NET, improving system performance and maintainability</li>
+                            <li>Delivered React-based UI features, reducing user input errors and improving workflow efficiency</li>
+                            <li>Collaborated with US stakeholders and cross-functional teams in Agile sprints</li>
+                        </ul>
+                        <div class="exp-stack">
+                            <span>Node.js</span><span>.NET</span><span>React</span><span>Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-card-accent"></div>
+                    <div class="exp-card-body">
+                        <div class="exp-meta">
+                            <span class="exp-duration">2 yrs 4 mos</span>
+                            <span class="exp-period">Feb 2022 - May 2024</span>
+                        </div>
+                        <h3 class="exp-company">Cognizant Softvision</h3>
+                        <p class="exp-role">Software Engineer</p>
+                        <ul class="exp-list">
+                            <li>Built advisor questionnaire platform for a major US enterprise client using .NET and React</li>
+                            <li>Designed backend services and responsive UI components for complex data workflows</li>
+                            <li>Improved system reliability and frontend performance through optimized API integration</li>
+                            <li>Worked closely with product owners and stakeholders to deliver iterative releases</li>
+                        </ul>
+                        <div class="exp-stack">
+                            <span>.NET</span><span>React</span><span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-card exp-highlight">
+                    <div class="exp-card-accent"></div>
+                    <div class="exp-card-body">
+                        <div class="exp-meta">
+                            <span class="exp-duration">2 yrs 9 mos</span>
+                            <span class="exp-period">Jun 2019 - Feb 2022</span>
+                        </div>
+                        <h3 class="exp-company">EastWest Bank</h3>
+                        <p class="exp-role">Software Developer - KOMO Digital Bank</p>
+                        <div class="exp-achievement">&#9733; Built from scratch &bull; 1M+ downloads &bull; Backend MVP 2021</div>
+                        <ul class="exp-list">
+                            <li>Core engineer in building KOMO Digital Bank from scratch, now with 1M+ downloads</li>
+                            <li>Developed scalable backend services supporting high-volume financial transactions</li>
+                            <li>Integrated InstaPay (1.0 & 2.0) for real-time interbank transfers</li>
+                            <li>Built full KYC workflows including video verification and third-party integrations</li>
+                            <li>Implemented bills payment, QR transactions, and fund transfers</li>
+                            <li>Integrated SMS/email notifications, debit card delivery, and analytics services</li>
+                        </ul>
+                        <div class="exp-stack">
+                            <span>.NET</span><span>Microservices</span><span>SQL Server</span><span>Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-card-accent"></div>
+                    <div class="exp-card-body">
+                        <div class="exp-meta">
+                            <span class="exp-duration">1 yr 3 mos</span>
+                            <span class="exp-period">Mar 2018 - May 2019</span>
+                        </div>
+                        <h3 class="exp-company">Philippine Savings Bank</h3>
+                        <p class="exp-role">System Analyst</p>
+                        <ul class="exp-list">
+                            <li>Implemented API management platform (WSO2) for mobile banking services</li>
+                            <li>Built secure middleware for encryption, logging, and API orchestration</li>
+                            <li>Automated risk reporting processes using PL/SQL, reducing manual workload</li>
+                            <li>Researched and supported adoption of Docker and NoSQL technologies</li>
+                        </ul>
+                        <div class="exp-stack">
+                            <span>WSO2</span><span>PL/SQL</span><span>Docker</span><span>APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-card-accent"></div>
+                    <div class="exp-card-body">
+                        <div class="exp-meta">
+                            <span class="exp-duration">1 yr</span>
+                            <span class="exp-period">Mar 2017 - Feb 2018</span>
+                        </div>
+                        <h3 class="exp-company">Easycash Lending</h3>
+                        <p class="exp-role">Full Stack Developer</p>
+                        <ul class="exp-list">
+                            <li>Built online lending system with eKYC and approval workflows</li>
+                            <li>Developed internal tools for loan processing and reporting</li>
+                            <li>Led migration to cloud-based banking platform (Mambu)</li>
+                            <li>Collaborated with leadership and vendors on product delivery</li>
+                        </ul>
+                        <div class="exp-stack">
+                            <span>Full Stack</span><span>eKYC</span><span>Mambu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-card-accent"></div>
+                    <div class="exp-card-body">
+                        <div class="exp-meta">
+                            <span class="exp-duration">10 mos</span>
+                            <span class="exp-period">Mar 2016 - Dec 2016</span>
+                        </div>
+                        <h3 class="exp-company">DOST-ASTI</h3>
+                        <p class="exp-role">Web Developer / Senior Research Assistant</p>
+                        <ul class="exp-list">
+                            <li>Built deduplication system for Philippine National ID data preparation</li>
+                            <li>Developed data-sharing portal for government agencies</li>
+                            <li>Improved data quality and processing efficiency at scale</li>
+                        </ul>
+                        <div class="exp-stack">
+                            <span>Web Dev</span><span>Data Processing</span><span>Government</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-card-accent"></div>
+                    <div class="exp-card-body">
+                        <div class="exp-meta">
+                            <span class="exp-duration">1 yr 6 mos</span>
+                            <span class="exp-period">Sep 2014 - Feb 2016</span>
+                        </div>
+                        <h3 class="exp-company">Cr8v Web Solutions</h3>
+                        <p class="exp-role">PHP Developer</p>
+                        <div class="exp-achievement">&#9733; Rookie of the Year 2015</div>
+                        <ul class="exp-list">
+                            <li>Built the backend application for Jollibee Delivery 87000, used by call center agents to communicate with stores and estimate delivery arrival times</li>
+                            <li>Developed the raffle winner fetching and drawing system for Jollibee 87000 promotions</li>
+                            <li>Built reporting tools and automation scripts for operations</li>
+                            <li>Maintained GIS systems for delivery routing and ETA optimization</li>
+                        </ul>
+                        <div class="exp-stack">
+                            <span>PHP</span><span>GIS</span><span>Backend</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section section-alt" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Selected projects I've worked on throughout my career</p>
+
+            <!-- Pamana Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Pamana - Government Infrastructure Tracking System</h3>
+                    <span class="project-badge">Government Project</span>
+                </div>
+                <p class="project-description">A government platform used to track the status of infrastructure projects across the Philippines. The system provides dashboards, project tables, geolocation mapping, and comprehensive project management tools for monitoring government-funded infrastructure development.</p>
+                <div class="project-tech">
+                    <span class="tag">Web Application</span>
+                    <span class="tag">Dashboard</span>
+                    <span class="tag">GIS/Maps</span>
+                    <span class="tag">Project Tracking</span>
+                    <span class="tag">Government</span>
+                </div>
+                <div class="project-gallery">
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="portfolio/Pamana Landing Page.png" alt="Pamana Landing Page" loading="lazy">
+                        <div class="gallery-overlay"><span>Landing Page</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="portfolio/Pamana Project Dashboard.png" alt="Pamana Project Dashboard" loading="lazy">
+                        <div class="gallery-overlay"><span>Project Dashboard</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="portfolio/Pamana Projects Table.png" alt="Pamana Projects Table" loading="lazy">
+                        <div class="gallery-overlay"><span>Projects Table</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="portfolio/Pamana Project Location with Map.png" alt="Pamana Project Location Map" loading="lazy">
+                        <div class="gallery-overlay"><span>Location Map</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="portfolio/Pamana Projects.png" alt="Pamana Projects Overview" loading="lazy">
+                        <div class="gallery-overlay"><span>Projects Overview</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KOMO Digital Bank -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>KOMO Digital Bank</h3>
+                    <span class="project-badge">Fintech</span>
+                </div>
+                <p class="project-description">A fully digital banking platform built from scratch for EastWest Bank, now with over 1 million downloads. Features include real-time fund transfers (InstaPay), bills payment, QR transactions, full KYC workflows with video verification, and comprehensive account management.</p>
+                <div class="project-tech">
+                    <span class="tag">Digital Banking</span>
+                    <span class="tag">Mobile App</span>
+                    <span class="tag">1M+ Users</span>
+                    <span class="tag">InstaPay Integration</span>
+                    <span class="tag">KYC</span>
+                </div>
+                <div class="project-gallery">
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="portfolio/Komo Digital Bank.png" alt="KOMO Digital Bank" loading="lazy">
+                        <div class="gallery-overlay"><span>KOMO Digital Bank</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="portfolio/Komo Digital Bank Google App.png" alt="KOMO on Google Play" loading="lazy">
+                        <div class="gallery-overlay"><span>Google Play Store</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jollibee Delivery 87000 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Jollibee Delivery 87000</h3>
+                    <span class="project-badge">Food Delivery</span>
+                </div>
+                <p class="project-description">The backend application powering Jollibee's nationwide delivery hotline (87000). Built the system used by call center agents to communicate with stores and calculate estimated delivery arrival times. Also developed the raffle winner fetching and drawing system for Jollibee 87000 promotions.</p>
+                <div class="project-tech">
+                    <span class="tag">Backend System</span>
+                    <span class="tag">Call Center</span>
+                    <span class="tag">GIS/ETA</span>
+                    <span class="tag">Raffle System</span>
+                    <span class="tag">PHP</span>
+                </div>
+                <div class="project-gallery">
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="portfolio/Jollibee 87000.jpg" alt="Jollibee Delivery 87000" loading="lazy">
+                        <div class="gallery-overlay"><span>Jollibee 87000</span></div>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.youtube.com/watch?v=PvrpsxGwl7s" target="_blank" rel="noopener noreferrer" class="project-link">&#9654; Watch Raffle Drawing Video</a>
+                </div>
+            </div>
+
+            <!-- Easycash Lending -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Easycash Lending Platform</h3>
+                    <span class="project-badge">Fintech</span>
+                </div>
+                <p class="project-description">An online lending platform with electronic Know Your Customer (eKYC) verification, loan approval workflows, and internal management tools. Led the migration to a cloud-based core banking platform (Mambu) for improved scalability and reliability.</p>
+                <div class="project-tech">
+                    <span class="tag">Lending Platform</span>
+                    <span class="tag">eKYC</span>
+                    <span class="tag">Cloud Banking</span>
+                    <span class="tag">Mambu</span>
+                </div>
+                <div class="project-gallery">
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="portfolio/Easycash Lending.png" alt="Easycash Lending Platform" loading="lazy">
+                        <div class="gallery-overlay"><span>Lending Platform</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(this)">
+                        <img src="portfolio/Easycash Lending Registration.png" alt="Easycash Registration" loading="lazy">
+                        <div class="gallery-overlay"><span>Registration Flow</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Projects Section -->
+    <section class="section" id="ai-projects">
+        <div class="container">
+            <h2 class="section-title">Personal AI Projects</h2>
+            <p class="section-subtitle">AI-powered applications built to explore and demonstrate modern AI capabilities</p>
+
+            <div class="ai-grid">
+                <div class="ai-card">
+                    <div class="ai-card-icon">&#128196;</div>
+                    <div class="ai-card-status">Coming Soon</div>
+                    <h3>AI Resume Analyzer</h3>
+                    <p>Upload a PDF resume and get AI-powered structured data extraction, scoring, and improvement suggestions. Leverages document intelligence to parse complex layouts.</p>
+                    <div class="ai-stack">
+                        <span>React</span><span>Node.js</span><span>Azure Document AI</span><span>OpenAI</span>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div class="ai-card-icon">&#128269;</div>
+                    <div class="ai-card-status">Coming Soon</div>
+                    <h3>AI Code Review Assistant</h3>
+                    <p>Paste code or connect a GitHub repo to get automated reviews for bugs, security vulnerabilities, performance issues, and best practice violations.</p>
+                    <div class="ai-stack">
+                        <span>React</span><span>Node.js</span><span>OpenAI / Claude API</span><span>GitHub API</span>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div class="ai-card-icon">&#128202;</div>
+                    <div class="ai-card-status">Coming Soon</div>
+                    <h3>Smart Project Status Dashboard</h3>
+                    <p>Upload project reports and get AI-generated summaries, risk flags, and delay predictions. An AI-enhanced infrastructure tracking dashboard inspired by government project monitoring.</p>
+                    <div class="ai-stack">
+                        <span>React</span><span>.NET</span><span>Azure OpenAI</span><span>Charts</span>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div class="ai-card-icon">&#128172;</div>
+                    <div class="ai-card-status">Coming Soon</div>
+                    <h3>AI Banking FAQ Chatbot</h3>
+                    <p>A conversational AI assistant trained on banking knowledge - account opening, KYC, fund transfers, and more. Uses RAG (Retrieval Augmented Generation) for accurate, contextual answers.</p>
+                    <div class="ai-stack">
+                        <span>React</span><span>Node.js</span><span>RAG</span><span>Vector DB</span>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div class="ai-card-icon">&#128247;</div>
+                    <div class="ai-card-status">Coming Soon</div>
+                    <h3>AI Receipt & Invoice Scanner</h3>
+                    <p>Snap a photo of a receipt or invoice and let AI extract line items, totals, dates, and categorize expenses automatically. Built for real-world fintech use cases.</p>
+                    <div class="ai-stack">
+                        <span>React</span><span>Azure Vision API</span><span>Document AI</span><span>Node.js</span>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div class="ai-card-icon">&#128450;</div>
+                    <div class="ai-card-status">Coming Soon</div>
+                    <h3>Natural Language to SQL</h3>
+                    <p>Type a question in plain English and get a working SQL query generated and executed against a sample database. Visualize results instantly with AI-powered data exploration.</p>
+                    <div class="ai-stack">
+                        <span>React</span><span>Node.js</span><span>OpenAI</span><span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Interested in working together? Feel free to reach out.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">&#9993;</div>
+                    <h3>Email</h3>
+                    <a href="mailto:daza_erwin@live.com">daza_erwin@live.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">&#9742;</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+639369351392">+63 936 935 1392</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">&#127760;</div>
+                    <h3>Location</h3>
+                    <p>Philippines<br>(Open to Remote - US Time Overlap)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Erwin L. Daza. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
